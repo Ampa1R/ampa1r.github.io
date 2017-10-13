@@ -10,6 +10,7 @@ body {
     margin: 0px auto;
     text-align: center;
     padding-top:20vh;
+    max-width:90%;
 }
 
 
@@ -25,6 +26,7 @@ a{
     font-size:24px;
 }
 #mail,#telegram{
+    margin-bottom:5vh;
     vertical-align: bottom;
     display:inline-block;
     width:300px;
