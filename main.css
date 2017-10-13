@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Museo; /* Гарнитура шрифта */
+    src: url(MuseoSans/MuseoSansRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+html {
+    background: url(images/bg.jpg) no-repeat top center #4b4b4b ;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Museo", Helvetica, Arial, sans-serif;
+    
+}
+
+body {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px auto;
+    max-width: 1126px;
+}
+.main{
+    margin: auto;
+    width: 938px;
+}
+/*         header          */
+.header{
+    margin:25px 0 0 0;
+}
+.logo{
+    display:inline-block;
+}
+.logo a {
+    font-family: "Museo";
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.logo b{
+    line-height: normal;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+    padding-left: 15px;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+.logo b:hover{
+    color:darkgray;
+}
+.logo img{
+    position
+}
+
+
+
+.menu{
+    font-size: 24px;
+    float: right;
+    display:inline-block;
+    text-align: right;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    float: left;
+    margin-left:25px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+.menu a:hover{
+    color:darkgray;
+}
+
+
+/*         promo          */
+
+
+.promo{
+    margin: 150px auto;
+}
+.promo_text{
+    vertical-align: top;
+    display:inline-block;
+    width: 549px;
+}
+.promo_text h1{
+    font-size: 36px;
+    font-weight: 300;
+}
+.promo_text p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.promo_button{
+    margin-top:20px;
+    border:1px solid #ffffff;
+    border-radius:20px;
+    color:#ffffff;
+    display:inline-block;
+    font-size:13px;
+    font-weight:bold;
+    line-height:44px;
+    text-align:center;
+    text-decoration:none;
+    width:222px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+}
+.promo_img{
+    display:inline-block;
+    float: right;
+}
+
+
+/*         form           */
+
+.form{
+    margin-left: auto;
+    width: 700px;
+    height: 850px;
+    background-color: #ffffff;
+    box-shadow: 0 0 101px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+    padding:0 119px;
+}
+.form h1{
+    padding: 65px 0 30px 0;
+    font-size: 46px;
+    font-weight: 300;
+    color: #000;
+}
+.form h2{
+    text-align: left;
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 5px 5px 5px;
+}
+.input{
+    width: 670px;
+    height: 40px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 40px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid #a0a0a0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font:24px "Museo", Helvetica, Arial, sans-serif ;
+    color: #848484;
+}
+.input:focus{
+    outline: none;
+    border-color:#666;
+    color:#444;
+}
+label{
+    margin:0 0 0 10px;
+    text-align: left;
+    color:#000;
+    font-size: 24px;
+    font-weight: 300;
+    display:inline-block;
+    float:left;
+}
+
+.radio {
+    width: 17px;
+    height: 17px;
+    margin: 0 3px 0 0;
+}
+.radio + label {
+    cursor: pointer;
+}
+.radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.radio:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 33px;
+    color:#000;
+}
+.radio:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: solid 2px #373737;
+    border-radius: 50%;
+    background: #FFF;
+}
+.radio:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000000;
+    opacity: 0;
+    transition: all .2s;
+}
+.radio:checked + label:after {
+    opacity: 1;
+}
+.order_button{
+    margin-top:50px;
+    background-color:#222;
+    padding: 5px 15px 5px 15px;
+    border-radius:5px;
+    color:#fff;
+    display:inline-block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height:44px;
+    letter-spacing: 2.4px;
+    text-align:center;
+    text-decoration:none;
+    width: 670px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+/*         foooter          */
+
+.footer{
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+
+
+
