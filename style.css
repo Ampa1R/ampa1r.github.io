@@ -9,25 +9,88 @@ html {
 body {
     margin: 0px auto;
     text-align: center;
-    padding-top:20vh;
     max-width:90%;
 }
+@media only screen and (min-width: 800px) {
+    body{padding-top:30vh;}
+}
 
+@media only screen and (max-width: 799px) {
+    body{padding-top:15vh;}
+}
 
 p{
     font-size:52px;
     font-weight:700;
     color:#000;
+    margin-bottom:10vh;
 }
 
 a{
     text-decoration: none;
     color:#226ee8;
     font-size:24px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.2s ease;
+}
+a:hover{
+    color:#104eb2;
+    text-decoration: underline;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
 }
 #mail,#telegram{
     margin-bottom:5vh;
     vertical-align: bottom;
     display:inline-block;
     width:300px;
+}
+
+
+@keyframes anim_title {
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+@-webkit-keyframes anim_title {
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+p {
+    display: block;
+    opacity: 0;
+    -webkit-animation: anim_title 1.5s ease 0.4s forwards;
+    -moz-animation: anim_title 2s ease 0.4s forwards;
+    -o-animation: anim_title 2s ease 0.4s forwards;
+    animation: anim_title 1.5s ease 0.4s forwards;
+}
+
+@keyframes anim_links {
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+@-webkit-keyframes anim_links {
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+div {
+    display: block;
+    opacity: 0;
+    -webkit-animation: anim_links 2s ease 0.6s forwards;
+    -moz-animation: anim_links 2s ease 0.4s forwards;
+    -o-animation: anim_links 2s ease 0.4s forwards;
+    animation: anim_links 1.4s ease 0.7s forwards;
 }
