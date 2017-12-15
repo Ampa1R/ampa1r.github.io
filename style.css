@@ -233,6 +233,7 @@ a.button:active{
 
 body.w-popup-body {
     overflow: hidden!important;
+    position:relative;
 }
 .w-popup-close{    
     position:fixed;
