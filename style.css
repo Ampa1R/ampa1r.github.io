@@ -89,6 +89,7 @@ a.button:active{
     height: 6px;
     margin-left:0;
     background-color: #251c2d;
+    border: 0;
 }
 .header-underline.center{
     margin-left:auto;
@@ -121,9 +122,6 @@ a.button:active{
     transition-duration: .3s;
     transition-timing-function: cubic-bezier(.05,.91,.43,.92);
     fill:#fff;
-}
-.social-i svg:active{
-    transform: translate3d(-1px, 1px, 0);
 }
 .social-i .vk, .social-i .be{
     width: 28px;
@@ -194,10 +192,6 @@ a.button:active{
     box-shadow: 0 0 5px 0 rgba(30, 1, 30, 0.2);
     margin:0;
 }
-.work-card.avt:active {
-    transform: translate3d(10px,-10px,0);
-    box-shadow: 0 0 5px 0 rgba(30, 1, 30, 0.2); 
-}
 .card-picture{
     padding:0;
 }
@@ -234,15 +228,13 @@ a.button:active{
 body.w-popup-body {
     overflow: hidden!important;
     position:relative;
+    height: 100%;
 }
 .w-popup-close{    
     position:fixed;
     cursor: pointer;
     right:35px;
     fill:#802c8c;
-}
-.w-popup-close svg:active{
-    transform: scale(0.7);
 }
 .w-popup {
     position: absolute;
@@ -252,7 +244,8 @@ body.w-popup-body {
     bottom: 0;
     left: 0;
     z-index: 10;
-    overflow-y:scroll;
+    overflow:scroll;
+    background-color: #fff;
     animation-duration: 400ms;
     animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -277,7 +270,6 @@ body.w-popup-body {
     min-height: 100vh;
     max-width: 100vw;
     outline: 0;
-    background-color: #fff;
     border-radius: 2px;
     padding:25px 0 0;
 }
@@ -326,7 +318,7 @@ body.w-popup-body {
     margin:70px 0 60px;
 }
 
-@media (hover: hover){
+@media (any-hover: hover) and (pointer: fine){
     .w-popup-close:hover{
         transform: scale(1.25);
     }
@@ -340,14 +332,24 @@ body.w-popup-body {
         fill:#8767a8;
     }
     .work-card:hover{
-        box-shadow: 0 20px 25px rgba(1,30,30,.2);
+        box-shadow: 0 20px 25px rgba(1, 30, 30, .2);
         transform: translate3d(15px,-15px,0);
+    }
+    .work-card.avt:active {
+        box-shadow: 0 0 5px 0 rgba(30, 1, 30, .2); 
+        transform: translate3d(10px,-10px,0);
+    }
+    .social-i svg:active{
+        transform: translate3d(-1px, 1px, 0);
     }
     .totop:hover, .card-bottom h2:hover, .work-img:hover{
         cursor: pointer;
     }
     .totop:hover{
         color:#8767a8;
+    }
+    .w-popup-close svg:active{
+        transform: scale(0.7);
     }
 }
 @media (max-width:450px){
