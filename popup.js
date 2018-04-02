@@ -13,7 +13,7 @@ $('.w-popup-close').click(function(){
     $('.w-popup').removeClass('modal-show');
     $('.w-popup').addClass('modal-hide');
     $('.content-border').unbind('touchmove')
-    var y = ["a","b","c"];
+    var y = ["a","b","c","d"];
     $.each(y, function(index, value){$('.w-popup-content-' + value).addClass('hide');});
 });
 $('.totop').click(function(){

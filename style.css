@@ -66,6 +66,7 @@ a:active{
     text-decoration-skip: ink;
 }
 a.button{
+    display:inline-block;
     background-color:#802c8c;
     color:#fff;
     font-family: 'Exo 2', sans-serif;
@@ -74,9 +75,13 @@ a.button{
     padding:15px 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-right:10px;
 }
 a.button:active{
     text-decoration: none;
+}
+a.behance{
+    margin-bottom:50px;
 }
 .white{
     color:#fff;
@@ -313,9 +318,10 @@ body.w-popup-body {
 }
 .w-line{
     width: 40px;
-    height: 4px;
+    height: 6px;
     background-color: #251c2d;
     margin:70px 0 60px;
+    border: 0;
 }
 
 @media (any-hover: hover) and (pointer: fine){
